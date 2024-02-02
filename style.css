@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
 }
+
 :root {
   --Yellow: hsl(47, 88%, 63%);
   --White: hsl(0, 0%, 100%);
@@ -15,16 +17,18 @@
 body {
   background-color: var(--Yellow);
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: "Figtree", sans-serif;
 }
+
 .container {
   background-color: var(--White);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   max-width: 384px;
   width: 100%;
   height: auto;
@@ -32,7 +36,7 @@ body {
   border: 1px solid var(--black, #111);
   box-shadow: 8px 8px 0px 0px #000;
   padding: 24px;
-  gap: 20px;
+  gap: 24px;
 }
 .img-illustration {
   max-width: 340px;
@@ -101,7 +105,8 @@ body {
 
 @media screen and (max-width: 450px) {
   .container {
-    width: 80%;
+    width: 90%;
+    margin: 0 auto;
   }
   .img-illustration {
     width: 100%;
